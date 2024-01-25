@@ -1,0 +1,17 @@
+01 what is hash ?
+( # ) Hash indicates the lines that should be processed by the pre-processor.
+
+02 what is a pre-processor ?
+pre-processor is a part of GCC. 
+
+03 what is GCC ?
+GCC is a C language complier that converts c source files to  executable.
+
+04 pre-processor of gcc will process lines ____ ?
+starting with hash.
+
+05 what is include ?
+pre processor directives.
+
+06 what is stdio.h ?
+function prototype of the inbuilt funtions.
