@@ -14,4 +14,22 @@ starting with hash.
 pre processor directives.
 
 06 what is stdio.h ?
-function prototype of the inbuilt funtions.
+stdio.h is a header files containing function prototype. (function prototype containing inbuilt funtions.)
+
+07 what is a function prototype ?
+function prototype consists of return type , function name , number of arguments and type of arguments.
+
+08 what is the use of function prototype ?
+function prototype used to check the if the corrrect number and type of actual arguments is being passed and the return type is correct.
+
+09 what is int main() ?
+int main is a function, int main returns an integer, int main is the starting point of a program.
+
+10 what is printf ?
+printf is a std library function used to print a string on the terminal(screen/console/stdout).
+
+11 what is the meaning of \n int fmt string ?
+\n int fmt string is used to move cursor to newline in terminal(screen/console/stdout).
+
+12 what dose return statement do ?
+transfers control from called functions to calling function and optionally returns a value.
