@@ -1,50 +1,40 @@
-#include <stdio.h>
+#include<stdio.h>
 
-float input();
-float square_root(float n);
+float input(); 
+float square_root(float n); 
 void output(float n, float sqrroot);
 
-int main() 
+float input()
 {
-    float number, result;
-    number = input();
-    result = square_root(number);
-    output(number, result);
-    return 0;
-}
 
-float input() 
-{
-    float num;
-    printf("Enter a number: ");
-    scanf("%f", &num);
-    return num;
+    int n; 
+    printf("enter a number :");
+    scanf("%d" , &n);
+    return n;
 }
-
 
 float square_root(float n)
- {
-    if (n < 0) 
+{
+    float x_old=1 , y_new=n/2;
+    float xy = 0.000001;
+    while(fabs(y_new-x_old)>xy)
     {
-        printf("Cannot calculate square root of a negative number.\n");
-        return -1; 
+        x_old=y_new;
+        y_new = 0.5*(x_old + n/x_old);
     }
-    float x = n;
-    float y = 1;
-    float epsilon = 0.0001;
-    while (x - y > epsilon)
-    {
-        x = (x + y) / 2;
-        y = n / x;
-    }
-    return x;
+    return y_new;
 }
 
-void output(float n, float sqrroot) 
+void output(float n , float sqrroot)
 {
-    if (sqrroot != -1)
-    {
-        printf("Square root of %.2f is approximately %.4f\n", n, sqrroot);
-    }
-    
+    printf("the square root of %f is %f" , n , sqrroot);
+}
+
+int main()
+{
+    float n , sqrroot;
+    n=input();
+    sqrroot = square_root(n);
+    output(n,sqrroot);
+    return 0;
 }
