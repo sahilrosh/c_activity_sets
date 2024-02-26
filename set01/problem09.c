@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<math.h>
 
 float input(); 
 float square_root(float n); 
