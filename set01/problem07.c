@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include<stdio.h>
 #include<math.h>
  
 int input_n();
@@ -7,7 +7,6 @@ void output (int n , int sum);
 
 int input_n()
 {
-
     int n;
     printf("enter a number:");
     scanf("%d" , &n);
